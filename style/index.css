@@ -57,10 +57,6 @@ body{
 }
 /* header styles */
 
-
-
-
-
 h1, h2, h3{
     font-family: 'Nunito', sans-serif;
     /* text-align:center; */
@@ -85,21 +81,20 @@ nav{
     display: flex;
     padding: 0 3%;
 }
-nav a{
-    width: 5%;
-    text-decoration:none;
-    text-align: center;
-    border: 1px solid black;
-}
-header nav .black{
-    color: #fff;
-    background-color: black;
-}
-
-header nav .white{
+button{
+    background-color: #FFF;
     color: black;
-    background-color: white;
-
+    border: 1px solid black;
+    padding: .5% 1%;
+}
+button:hover{
+    background-color: #000;
+    color: white;
+    border: 1px solid #FFF;   
+}
+button a{
+    text-decoration: none;
+    color: inherit;
 }
 
 .top{
@@ -129,10 +124,7 @@ header nav .white{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
-
 }
-
 .gallery h3{
     text-align: center;
 }
@@ -152,16 +144,9 @@ footer{
     height: 10vh;
     text-align: center;
 }
-.footer-nav{
-    display: flex;
-    justify-content: center;
+@media(max-width: 800px){
+    /*if the screen size is 800px or smaller apply these styles*/
 }
-
-.footer-nav{
-    text-decoration: none;
+@media(max-width: 500px){
+    /*if the screen size is 800px or smaller apply these styles*/
 }
-.navfooter{
-    background-color: white;
-    width: 15%;
-}
-
