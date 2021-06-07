@@ -1,1 +1,181 @@
 /* Add CSS styling here */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    max-width:100%;
+    /* border:1px solid grey; */
+}
+html{
+    font-size:62.5%;
+}
+body{
+    font-size:1.8rem;
+    color:#4f4f4f;
+    line-height:1.5;
+    font-family: 'PT Sans', sans-serif;
+    background-color:#FFFAFA;
+}
+/* header styles */
+
+h1, h2, h3{
+    font-family: 'Nunito', sans-serif;
+    /* text-align:center; */
+}
+h1{
+    font-size:5rem;
+    padding: 0 1%;
+}
+h2{
+    font-size:3.5rem;
+}
+h3{
+    font-size:2.0rem;
+}
+p{
+    font-size: 1.6rem;
+}
+section{
+    padding:1% 1%;
+}
+header{
+    background-color: lightgrey;
+}
+nav{
+    display: flex;
+    padding: 0 3%;
+}
+button{
+    background-color: #FFF;
+    color: black;
+    border: 1px solid black;
+    padding: .5% 1%;
+}
+button:hover{
+    background-color: #000;
+    color: white;
+    border: 1px solid #FFF;   
+}
+button a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.top{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+}
+.heroImg{
+    height:40%;
+    width: 40%;
+}
+
+.right{
+    width: 48%;
+}
+.right .mp-button{
+    background-color: white;
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 0 1%;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.gallery h3{
+    text-align: center;
+}
+.proj{
+    width: 20%;
+}
+.projimg{
+    width: 100%;
+    height:20vh;
+
+}
+footer{
+    background-color: lightgrey;
+    height: 10vh;
+    text-align: center;
+}
+@media(max-width: 800px){
+    /*if the screen size is 800px or smaller apply these styles*/
+}
+@media(max-width: 500px){
+    /*if the screen size is 500px or smaller apply these styles*/
+     header{
+        display: flex;
+        flex-direction: column;
+    } 
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .top{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;  
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+    .gallery{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .proj{
+        width: 45%;
+    }
+
+}
